@@ -1,0 +1,13 @@
+<template name="postsList">
+  <div class="posts">
+      {{#each posts}}
+        {{> postItem}}
+      {{/each}}
+  </div>
+
+</template>
+
+<!--
+    the posts object is actually a template helper defined in
+    the template manager called posts_list.js
+-->

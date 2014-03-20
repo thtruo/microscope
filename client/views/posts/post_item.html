@@ -1,0 +1,17 @@
+<template name="postItem">
+  <div class="post">
+    <div class="post-content">
+      <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
+    </div>
+  </div>
+
+</template>
+
+<!--
+    postItem template is straightforward and uses 3 expressions
+        {{url}}
+        {{title}}   both return the document's properties
+                    (Meteor knows we mean this.title and this.url,
+                    where this refers to each posts object)
+        {{domain}}  calls a template helper
+-->
