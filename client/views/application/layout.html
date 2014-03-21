@@ -1,0 +1,22 @@
+<!-- layout.html contains the app's outer layout -->
+<template name="layout">
+  <div class="container">
+    <header class="navbar">
+      <div class="navbar-inner">
+        <a class="brand" href="{{pathFor 'postsList'}}">Microscope</a>
+      </div>
+    </header>
+
+    <div id="main" class="row-fluid">
+      {{yield}}
+    </div>
+  </div>
+</template>
+
+<!--
+  The {{yield}} helper defines a special dynamic zone that will
+  automatically render whichever template corresponds to the
+  current route.
+  As a convention, we'll designate this special template as the
+  "route templates".
+-->
